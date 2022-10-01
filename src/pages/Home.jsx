@@ -17,7 +17,7 @@ export default function Home() {
         </h1>
         <button
           onClick={() => navigate('/Games')}
-          className='animate__animated animate__flash md:order-last bg-slate-900 mb-4 border-slate-900 border-2 rounded flex items-center justify-center px-6 py-2 hover:bg-slate-50 duration-200 hover:border-slate-50 hover:text-slate-900'
+          className='animate__animated animate__flash md:order-last text-slate-900 bg-slate-50 mb-4 border-slate-50 border-2 rounded flex items-center justify-center px-6 py-2 hover:bg-slate-900 duration-200 hover:border-slate-900 hover:text-slate-50'
         >
           Start
         </button>
