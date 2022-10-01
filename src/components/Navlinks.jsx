@@ -20,7 +20,7 @@ export default function Navlinks() {
     }
 
     return (
-        <nav className='animate__animated animate__slideInRight md:animate-none z-10 bg-transparent w-full pt-16 min-h-full fixed top-0 left-0 flex justify-center md:pt-0 md:flex md:justify-center md:items-center md:z-auto md:relative md:h-full'>
+        <nav className='animate__animated animate__slideInRight md:animate-none z-10 bg-slate-900 w-full pt-16 min-h-full fixed top-0 left-0 flex justify-center md:pt-0 md:flex md:justify-center md:items-center md:z-auto md:relative md:h-full'>
             <ul className='w-full md:flex md:h-full md:items-center'>
                 <li className='mb-2 h-14 md:flex md:mr-4 md:justify-center md:items-center md:h-full'>
                     <Link to='/' className={activeLink('/')} onClick={() => setOpen(false)}>

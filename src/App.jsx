@@ -11,7 +11,7 @@ const Games = lazy(() => import('./pages/Games'));
 export default function App() {
 
   return (
-    <div className='App bg-gradient-to-b from-slate-900 to-cyan-700 min-h-screen text-slate-50 flex items-center flex-col w-full'>
+    <div className='App bg-gradient-to-b from-slate-900 to-cyan-700 min-h-screen text-white flex items-center flex-col w-full'>
       <Router>
         <NavbarProvider>
           <Navbar />
