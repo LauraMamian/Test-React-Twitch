@@ -10,7 +10,7 @@ export default function Navbar() {
     const { isOpen, setOpen } = useContext(navbarCont);
 
     return (
-        <div className='bg-transparent h-16 w-full flex justify-center fixed z-20'>
+        <div className='bg-slate-900 h-16 w-full flex justify-center fixed z-20'>
             <div className='flex h-full justify-between items-center w-11/12'>
                 <Link to='/' className='z-30'>
                     <img src={Logo} className='w-12 h-auto' alt='Logo' />
