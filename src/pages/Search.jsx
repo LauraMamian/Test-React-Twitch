@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from 'react'
 
-export default function BuscarJuegos() {
+export default function Search() {
   const [token, setToken] = useState(null);
   const [games, setgames] = useState([]);
   const inputSearch = useRef(null);
@@ -46,7 +46,7 @@ export default function BuscarJuegos() {
       <div className="w-11/12 mt-20 mb-20 flex flex-col justify-center items-center">
         <h1 className="text-3xl font-bold text-white mb-4 justify-center items-center"> Search game </h1>
 
-        <input className='mb-4 text-slate-900 border-none w-full' type="search" onChange={() => obtenerToken(inputSearch.current.value)} ref={inputSearch} name="" id="" />
+        <input className='m-4 appearance-none border-transparentout outline-none rounded-lg text-slate-900 w-full p-1 focus:border-transparent focus:ring-0' placeholder='Search' type="search" onChange={() => obtenerToken(inputSearch.current.value)} ref={inputSearch} name="" id="" />
         <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
           {
             games.map((game) => {
