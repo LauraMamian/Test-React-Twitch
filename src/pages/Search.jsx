@@ -42,23 +42,25 @@ export default function BuscarJuegos() {
   }, [setToken, setgames]);
 
   return (
-    <div>
-      <h1 className="text-3xl font-bold text-white">Buscar juegos </h1>
+    <div className='flex-col w-11/12 min-h-screen flex justify-center items-center md:justify-start'>
+      <div className="w-11/12 mt-20 mb-20 flex flex-col justify-center items-center">
+        <h1 className="text-3xl font-bold text-white mb-4 justify-center items-center"> Search game </h1>
 
-      <input className='border-black' type="search" onChange={() => obtenerToken(inputSearch.current.value)} ref={inputSearch} name="" id="" />
-      {
-        games.map((game) => {
-          return (
-            <div key={game.id}>
-              <img src={game.box_art_url} alt="imagen" />
-              <p>{game.name}</p>
-            </div>
-          )
-        })
-      }
-      <p>
-        {token}
-      </p>
+        <input className='mb-4 text-slate-900 border-none w-full' type="search" onChange={() => obtenerToken(inputSearch.current.value)} ref={inputSearch} name="" id="" />
+        <div className="grid grid-cols-2 gap-2 md:grid-cols-4">
+          {
+            games.map((game) => {
+              return (
+                <div className='flex flex-row items-center' key={game.id}>
+                  <img className='w-15 h-15 rounded-xl' src={game.box_art_url} alt="imagen" />
+                  <p className='ml-4'>{game.name}</p>
+                </div>
+              )
+            })
+          }
+        </div>
+      </div>
+
     </div>
   )
 }
