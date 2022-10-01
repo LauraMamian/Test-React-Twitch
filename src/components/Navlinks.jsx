@@ -42,7 +42,7 @@ export default function Navlinks() {
 
                 <li className='mb-2 h-14 md:flex md:mr-4 md:justify-center md:items-center md:h-full'>
                     <Link
-                        to='/top-games'
+                        to='/games'
                         className={activeLink('/games')}
                         onClick={() => setOpen(false)}
                     >
