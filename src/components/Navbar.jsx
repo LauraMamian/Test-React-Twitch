@@ -1,7 +1,7 @@
 import { useContext } from 'react'
 import { Link } from 'react-router-dom'
 import NavLinks from './Navlinks';
-import Logo from '../assets/react.svg'
+import Logo from '../assets/logo.svg'
 import {Spin as Hamburger} from 'hamburger-react'
 import { navbarCont } from '../context/NavbarContext';
 

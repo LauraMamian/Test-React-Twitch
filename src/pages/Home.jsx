@@ -6,21 +6,28 @@ export default function Home() {
 
   return (
     <div className='w-11/12 min-h-screen flex justify-center items-center md:justify-start'>
-      <div className='flex flex-col items-center justify-center w-full md:w-full'>
+      <div className='flex flex-col items-center justify-center md:items-start md:w-1/3'>
+        <p className='animate__animated animate__fadeInDown text-lg'>
+          ¡Bienvenido! Soy Laura Mamián y este proyecto usa
+        </p>
+        <h1 className='animate__animated animate__fadeInDown text-center text-xl md:text-4xl text-purple-400 mb-4'>
+          TWITCH API
+        </h1>
+
         <img
-          className='animate__animated animate__fadeInDown w-40 md:w-40 md:flex flex-col md:right-20 md:top-28 mb-4'
+          className='animate__animated animate__fadeInDown w-3/5 md:w-4/12 md:absolute md:right-48 md:top-28 mb-4'
           src={twitch}
           alt='twitch'
         />
-        <h1 className='animate__animated animate__fadeIn text-center text-xl md:text-4xl text-slate-50 mb-4'>
-          TEST FRONTEND WEB DEVELOPER
-        </h1>
         <button
           onClick={() => navigate('/Games')}
-          className='animate__animated animate__flash md:order-last text-slate-900 bg-slate-50 mb-4 border-slate-50 border-2 rounded flex items-center justify-center px-6 py-2 hover:bg-slate-900 duration-200 hover:border-slate-900 hover:text-slate-50'
+          className='animate__animated animate__fadeInDown md:order-last bg-purple-500 mb-4 border-purple-500 border-2 rounded flex items-center justify-center px-6 py-2 hover:bg-purple-600 duration-200 hover:border-purple-600'
         >
-          Start
+          ¡Comencemos!
         </button>
+        <p className='animate__animated animate__fadeInDown text-slate-500 md:mb-4 text-center md:text-left'>
+          Para buscar los juegos más populares, haz click en el botón
+        </p>
       </div>
     </div>
   )
